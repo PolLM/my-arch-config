@@ -4,7 +4,7 @@ This repository contains my personal terminal configuration files and a `Makefil
 
 After installation the terminal should look like this:
 
-![Terminal Screenshot](./assets/terminal_screenshot/terminal_screenshot.png)
+![Terminal Screenshot](./assets/terminal_screenshot.png)
 
 ## Setup Instructions
 
