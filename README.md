@@ -45,12 +45,3 @@ make get-conf
 ```
 
 This will copy the relevant configuration files from your system into the repository.
-### 5. Install and Apply Configuration
-
-For a complete setup, including package installation and applying configuration files, use:
-
-```bash
-make install-apply-conf
-```
-
-This will perform both the installation of packages and the application of configuration files in one step.
