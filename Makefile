@@ -30,5 +30,3 @@ apply-conf:
 	cp $(REPO_DIR)/$(notdir $(KITTY_CONFIG)) $(SYSTEM_DIR)/$(KITTY_CONFIG)
 	cp $(REPO_DIR)/$(notdir $(NEOFETCH_CONFIG)) $(SYSTEM_DIR)/$(NEOFETCH_CONFIG)
 	cp $(REPO_DIR)/$(notdir $(STARSHIP_CONFIG)) $(SYSTEM_DIR)/$(STARSHIP_CONFIG)
-
-install-apply-conf: install-packages apply_conf
