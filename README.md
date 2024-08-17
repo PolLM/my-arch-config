@@ -2,6 +2,9 @@
 
 This repository contains my personal terminal configuration files and a `Makefile` to automate the setup process. It includes configurations for `bash`, `kitty`, `neofetch`, and `starship`.
 
+After installation the terminal should look like this:
+
+![Terminal Screenshot](./assets/terminal_screenshot/terminal_screenshot.png)
 
 ## Setup Instructions
 
