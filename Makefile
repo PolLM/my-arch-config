@@ -14,8 +14,8 @@ install-packages:
 	sudo pacman -Syu --noconfirm
 	sudo pacman -S --noconfirm kitty
 	sudo pacman -S --noconfirm neofetch
-	sudo pacman -S --noconfirm starship
 	sudo pacman -S --noconfirm ttf-firacode-nerd
+	sudo pacman -S --noconfirm starship
 
 # Copy files from the system to the repo
 get-conf:
