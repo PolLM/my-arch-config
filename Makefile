@@ -11,11 +11,16 @@ STARSHIP_CONFIG := .config/starship.toml
 
 # Install necessary packages
 install-packages:
-	sudo pacman -Syu --noconfirm
-	sudo pacman -S --noconfirm kitty
-	sudo pacman -S --noconfirm neofetch
-	sudo pacman -S --noconfirm ttf-firacode-nerd
-	sudo pacman -S --noconfirm starship
+	@if [ -f /etc/arch-release ]; then \
+		sudo pacman -Syu --noconfirm; \
+		sudo pacman -S --noconfirm kitty neofetch ttf-firacode-nerd starship; \
+	elif [ -f /etc/debian_version ]; then \
+		sudo apt update && sudo apt upgrade -y; \
+		sudo apt install -y kitty neofetch fonts-firacode starship; \
+	else \
+		echo "Unsupported OS"; \
+		exit 1; \
+	fi
 
 # Copy files from the system to the repo
 get-conf:
