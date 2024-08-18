@@ -18,7 +18,7 @@ install-packages:
 		sudo apt update && sudo apt upgrade -y; \
 		sudo apt install -y kitty neofetch fonts-firacode starship; \
 	else \
-		echo "Unsupported OS"; \
+		echo "Unsupported distro. Only allowed Arch & debian based distros. "; \
 		exit 1; \
 	fi
 
